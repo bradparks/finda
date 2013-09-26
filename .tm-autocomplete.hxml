@@ -1,0 +1,9 @@
+#build file
+
+#Java target 
+    -cp src
+    -java java
+    -main justinfront.Main
+    -D haxe3
+    #
+    #

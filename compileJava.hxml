@@ -1,0 +1,13 @@
+#build file
+
+#Java target 
+    -cp src
+    -java java
+    -main finda.Main
+    -D haxe3
+    #
+    #--next
+    -cmd cd java/src 
+    -cmd javac finda/Main.java -d ../
+    -cmd cd ..
+    -cmd java finda/Main
