@@ -37,7 +37,7 @@ implements MouseMotionListener
     var dx:             Float;
     var dy:             Float;
     var down:           Bool        = false;
-    
+    var boundary:       Int         = 250;
     public static function main() { new Main(); } public function new()
     {
         super( 'Finda ( java ver: ' + System.getProperty('java.version')  +')');
@@ -60,7 +60,7 @@ implements MouseMotionListener
         surface = new Surface();
         surface.paintFunction = paintViews;
         view_ls = new View_ls( './', 25, 25 );
-        view_ls2 = new View_ls( '/', 300, 25 );
+        view_ls2 = new View_ls( '../', 300, 25 );
         getContentPane().add( surface );
         surface.addKeyListener( this );
         surface.setFocusable( true );
@@ -148,6 +148,34 @@ implements MouseMotionListener
     }  
     public function mouseReleased( e: MouseEvent ){
         down = false;
+        //if( fileView.file.name == 'test.txt' )
+        //{
+            if( fileView.x < boundary && view == view_ls2 )
+            {
+                sys.FileSystem.rename( view.path + '/' + fileView.file.name, view_ls.path + '/' + fileView.file.name );
+                // this is slight overkill
+                view_ls.init( view_ls.path );
+                view_ls2.init( view_ls2.path );
+                surface.repaint();
+            } 
+            else if( fileView.x > boundary && view == view_ls )
+            {
+                sys.FileSystem.rename( view.path + '/' + fileView.file.name, view_ls2.path + '/' + fileView.file.name );
+                // this is slight overkill
+                view_ls.init( view_ls.path );
+                view_ls2.init( view_ls2.path );
+                surface.repaint();
+            }
+            else
+            {
+                // very lazy!  Must change this!!
+                view_ls.init( view_ls.path );
+                view_ls2.init( view_ls2.path );
+                surface.repaint();
+                
+            }
+            
+        //}
     }
     public function keyTyped( e: KeyEvent ) {}
     public function keyReleased(e: KeyEvent ) {}

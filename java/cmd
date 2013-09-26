@@ -1,6 +1,4 @@
 src/haxe/root/Std.java
-src/haxe/Log.java
-src/haxe/Log_new_45__Fun.java
 src/haxe/lang/IEquatable.java
 src/haxe/lang/HaxeException.java
 src/haxe/root/Array.java

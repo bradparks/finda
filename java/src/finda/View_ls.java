@@ -69,7 +69,6 @@ public  class View_ls extends haxe.lang.HxObject
 		}
 		
 		this.parent = ( haxe.lang.StringExt.substr(this.full, 0, ( len + 1 )) + "/" );
-		haxe.Log.trace.__hx_invoke2_o(0.0, 0.0, ( "parent " + this.parent ), new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"finda.View_ls", "View_ls.hx", "init"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (35) )) )})));
 		this.shapes = new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{});
 		this.repaint = ((haxe.lang.Function) (new haxe.lang.Closure(((java.lang.Object) (this) ), haxe.lang.Runtime.toString("firstPaint"))) );
 	}
@@ -143,14 +142,14 @@ public  class View_ls extends haxe.lang.HxObject
 					len = 0;
 				}
 				
-				java.lang.Object __temp_stmt59 = null;
+				java.lang.Object __temp_stmt58 = null;
 				{
-					int __temp_odecl57 = ((int) (charcode.__hx_invoke2_f(0.0, ((double) (0) ), f, haxe.lang.Runtime.undefined)) );
-					java.lang.Object __temp_odecl58 = ((java.lang.Object) (stat.__hx_invoke1_o(0.0, pf)) );
-					__temp_stmt59 = new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"fileStat", "isDir", "name"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{__temp_odecl58, hasDir, f}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"firstLetter", "subDirLen"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (__temp_odecl57) )) ), ((java.lang.Object) (((double) (len) )) )}));
+					int __temp_odecl56 = ((int) (charcode.__hx_invoke2_f(0.0, ((double) (0) ), f, haxe.lang.Runtime.undefined)) );
+					java.lang.Object __temp_odecl57 = ((java.lang.Object) (stat.__hx_invoke1_o(0.0, pf)) );
+					__temp_stmt58 = new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"fileStat", "isDir", "name"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{__temp_odecl57, hasDir, f}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"firstLetter", "subDirLen"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (__temp_odecl56) )) ), ((java.lang.Object) (((double) (len) )) )}));
 				}
 				
-				folder.push(__temp_stmt59);
+				folder.push(__temp_stmt58);
 			}
 			
 		}
@@ -260,14 +259,14 @@ public  class View_ls extends haxe.lang.HxObject
 	@Override public   double __hx_setField_f(java.lang.String field, double value, boolean handleProperties)
 	{
 		{
-			boolean __temp_executeDef60 = true;
+			boolean __temp_executeDef59 = true;
 			switch (field.hashCode())
 			{
 				case 121:
 				{
 					if (field.equals("y")) 
 					{
-						__temp_executeDef60 = false;
+						__temp_executeDef59 = false;
 						this.y = ((int) (value) );
 						return value;
 					}
@@ -280,7 +279,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("x")) 
 					{
-						__temp_executeDef60 = false;
+						__temp_executeDef59 = false;
 						this.x = ((int) (value) );
 						return value;
 					}
@@ -291,7 +290,7 @@ public  class View_ls extends haxe.lang.HxObject
 				
 			}
 			
-			if (__temp_executeDef60) 
+			if (__temp_executeDef59) 
 			{
 				return super.__hx_setField_f(field, value, handleProperties);
 			}
@@ -308,14 +307,14 @@ public  class View_ls extends haxe.lang.HxObject
 	@Override public   java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
 		{
-			boolean __temp_executeDef61 = true;
+			boolean __temp_executeDef60 = true;
 			switch (field.hashCode())
 			{
 				case -903568142:
 				{
 					if (field.equals("shapes")) 
 					{
-						__temp_executeDef61 = false;
+						__temp_executeDef60 = false;
 						this.shapes = ((haxe.root.Array<java.lang.Object>) (value) );
 						return value;
 					}
@@ -328,7 +327,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("x")) 
 					{
-						__temp_executeDef61 = false;
+						__temp_executeDef60 = false;
 						this.x = ((int) (haxe.lang.Runtime.toInt(value)) );
 						return value;
 					}
@@ -341,7 +340,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("repaint")) 
 					{
-						__temp_executeDef61 = false;
+						__temp_executeDef60 = false;
 						this.repaint = ((haxe.lang.Function) (value) );
 						return value;
 					}
@@ -354,7 +353,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("y")) 
 					{
-						__temp_executeDef61 = false;
+						__temp_executeDef60 = false;
 						this.y = ((int) (haxe.lang.Runtime.toInt(value)) );
 						return value;
 					}
@@ -367,7 +366,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("parent")) 
 					{
-						__temp_executeDef61 = false;
+						__temp_executeDef60 = false;
 						this.parent = haxe.lang.Runtime.toString(value);
 						return value;
 					}
@@ -380,7 +379,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("path")) 
 					{
-						__temp_executeDef61 = false;
+						__temp_executeDef60 = false;
 						this.path = haxe.lang.Runtime.toString(value);
 						return value;
 					}
@@ -393,7 +392,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("full")) 
 					{
-						__temp_executeDef61 = false;
+						__temp_executeDef60 = false;
 						this.full = haxe.lang.Runtime.toString(value);
 						return value;
 					}
@@ -404,7 +403,7 @@ public  class View_ls extends haxe.lang.HxObject
 				
 			}
 			
-			if (__temp_executeDef61) 
+			if (__temp_executeDef60) 
 			{
 				return super.__hx_setField(field, value, handleProperties);
 			}
@@ -421,14 +420,14 @@ public  class View_ls extends haxe.lang.HxObject
 	@Override public   java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
 		{
-			boolean __temp_executeDef62 = true;
+			boolean __temp_executeDef61 = true;
 			switch (field.hashCode())
 			{
 				case -793404268:
 				{
 					if (field.equals("overCheck")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return ((haxe.lang.Function) (new haxe.lang.Closure(((java.lang.Object) (this) ), haxe.lang.Runtime.toString("overCheck"))) );
 					}
 					
@@ -440,7 +439,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("x")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return this.x;
 					}
 					
@@ -452,7 +451,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("clicked")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return ((haxe.lang.Function) (new haxe.lang.Closure(((java.lang.Object) (this) ), haxe.lang.Runtime.toString("clicked"))) );
 					}
 					
@@ -464,7 +463,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("y")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return this.y;
 					}
 					
@@ -476,7 +475,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("buildFileStructure")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return ((haxe.lang.Function) (new haxe.lang.Closure(((java.lang.Object) (this) ), haxe.lang.Runtime.toString("buildFileStructure"))) );
 					}
 					
@@ -488,7 +487,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("path")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return this.path;
 					}
 					
@@ -500,7 +499,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("secondPaint")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return ((haxe.lang.Function) (new haxe.lang.Closure(((java.lang.Object) (this) ), haxe.lang.Runtime.toString("secondPaint"))) );
 					}
 					
@@ -512,7 +511,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("full")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return this.full;
 					}
 					
@@ -524,7 +523,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("firstPaint")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return ((haxe.lang.Function) (new haxe.lang.Closure(((java.lang.Object) (this) ), haxe.lang.Runtime.toString("firstPaint"))) );
 					}
 					
@@ -536,7 +535,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("parent")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return this.parent;
 					}
 					
@@ -548,7 +547,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("init")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return ((haxe.lang.Function) (new haxe.lang.Closure(((java.lang.Object) (this) ), haxe.lang.Runtime.toString("init"))) );
 					}
 					
@@ -560,7 +559,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("repaint")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return this.repaint;
 					}
 					
@@ -572,7 +571,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("shapes")) 
 					{
-						__temp_executeDef62 = false;
+						__temp_executeDef61 = false;
 						return this.shapes;
 					}
 					
@@ -582,7 +581,7 @@ public  class View_ls extends haxe.lang.HxObject
 				
 			}
 			
-			if (__temp_executeDef62) 
+			if (__temp_executeDef61) 
 			{
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}
@@ -599,14 +598,14 @@ public  class View_ls extends haxe.lang.HxObject
 	@Override public   double __hx_getField_f(java.lang.String field, boolean throwErrors, boolean handleProperties)
 	{
 		{
-			boolean __temp_executeDef63 = true;
+			boolean __temp_executeDef62 = true;
 			switch (field.hashCode())
 			{
 				case 121:
 				{
 					if (field.equals("y")) 
 					{
-						__temp_executeDef63 = false;
+						__temp_executeDef62 = false;
 						return ((double) (this.y) );
 					}
 					
@@ -618,7 +617,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("x")) 
 					{
-						__temp_executeDef63 = false;
+						__temp_executeDef62 = false;
 						return ((double) (this.x) );
 					}
 					
@@ -628,7 +627,7 @@ public  class View_ls extends haxe.lang.HxObject
 				
 			}
 			
-			if (__temp_executeDef63) 
+			if (__temp_executeDef62) 
 			{
 				return super.__hx_getField_f(field, throwErrors, handleProperties);
 			}
@@ -645,14 +644,14 @@ public  class View_ls extends haxe.lang.HxObject
 	@Override public   java.lang.Object __hx_invokeField(java.lang.String field, haxe.root.Array dynargs)
 	{
 		{
-			boolean __temp_executeDef64 = true;
+			boolean __temp_executeDef63 = true;
 			switch (field.hashCode())
 			{
 				case -793404268:
 				{
 					if (field.equals("overCheck")) 
 					{
-						__temp_executeDef64 = false;
+						__temp_executeDef63 = false;
 						return this.overCheck(((java.awt.event.MouseEvent) (dynargs.__get(0)) ));
 					}
 					
@@ -664,7 +663,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("init")) 
 					{
-						__temp_executeDef64 = false;
+						__temp_executeDef63 = false;
 						this.init(haxe.lang.Runtime.toString(dynargs.__get(0)));
 					}
 					
@@ -676,7 +675,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("clicked")) 
 					{
-						__temp_executeDef64 = false;
+						__temp_executeDef63 = false;
 						this.clicked(dynargs.__get(0));
 					}
 					
@@ -688,7 +687,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("firstPaint")) 
 					{
-						__temp_executeDef64 = false;
+						__temp_executeDef63 = false;
 						this.firstPaint(((java.awt.Graphics2D) (dynargs.__get(0)) ));
 					}
 					
@@ -700,7 +699,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("buildFileStructure")) 
 					{
-						__temp_executeDef64 = false;
+						__temp_executeDef63 = false;
 						this.buildFileStructure(((java.awt.Graphics2D) (dynargs.__get(0)) ));
 					}
 					
@@ -712,7 +711,7 @@ public  class View_ls extends haxe.lang.HxObject
 				{
 					if (field.equals("secondPaint")) 
 					{
-						__temp_executeDef64 = false;
+						__temp_executeDef63 = false;
 						this.secondPaint(((java.awt.Graphics2D) (dynargs.__get(0)) ));
 					}
 					
@@ -722,7 +721,7 @@ public  class View_ls extends haxe.lang.HxObject
 				
 			}
 			
-			if (__temp_executeDef64) 
+			if (__temp_executeDef63) 
 			{
 				return super.__hx_invokeField(field, dynargs);
 			}

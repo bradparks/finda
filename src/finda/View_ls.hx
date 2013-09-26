@@ -12,7 +12,7 @@ class View_ls
     public var x:       Int = 0;
     public var y:       Int = 0;
     public var path:    String = './';
-    var full:           String;
+    public var full:    String;
     var parent:         String;
     public var repaint: Graphics2D -> Void;
     var shapes:         Array<FileView>;
@@ -32,7 +32,7 @@ class View_ls
         var len = full.length;
         while( len > 0 && charcode( full, len-- ) != 47 ){}
         parent = full.substr( 0, len + 1 ) + '/';
-        trace( 'parent ' + parent );
+        //trace( 'parent ' + parent );
         shapes = [];
         repaint = firstPaint;
     }
