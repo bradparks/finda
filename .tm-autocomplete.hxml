@@ -3,7 +3,7 @@
 #Java target 
     -cp src
     -java java
-    -main justinfront.Main
+    -main finda.Main
     -D haxe3
     #
     #

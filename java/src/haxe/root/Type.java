@@ -73,16 +73,16 @@ public  class Type extends haxe.lang.HxObject
 		}
 		
 		{
-			java.lang.String __temp_svar41 = (name);
-			int __temp_hash43 = __temp_svar41.hashCode();
-			boolean __temp_executeDef42 = true;
-			switch (__temp_hash43)
+			java.lang.String __temp_svar42 = (name);
+			int __temp_hash44 = __temp_svar42.hashCode();
+			boolean __temp_executeDef43 = true;
+			switch (__temp_hash44)
 			{
 				case -672261858:case 104431:
 				{
-					if (( (( ( __temp_hash43 == -672261858 ) && __temp_svar41.equals("Integer") )) || __temp_svar41.equals("int") )) 
+					if (( (( ( __temp_hash44 == -672261858 ) && __temp_svar42.equals("Integer") )) || __temp_svar42.equals("int") )) 
 					{
-						__temp_executeDef42 = false;
+						__temp_executeDef43 = false;
 						return "Int";
 					}
 					
@@ -92,9 +92,9 @@ public  class Type extends haxe.lang.HxObject
 				
 				case -1939501217:
 				{
-					if (__temp_svar41.equals("Object")) 
+					if (__temp_svar42.equals("Object")) 
 					{
-						__temp_executeDef42 = false;
+						__temp_executeDef43 = false;
 						return "Dynamic";
 					}
 					
@@ -104,9 +104,9 @@ public  class Type extends haxe.lang.HxObject
 				
 				case 2052876273:case -1325958191:
 				{
-					if (( (( ( __temp_hash43 == 2052876273 ) && __temp_svar41.equals("Double") )) || __temp_svar41.equals("double") )) 
+					if (( (( ( __temp_hash44 == 2052876273 ) && __temp_svar42.equals("Double") )) || __temp_svar42.equals("double") )) 
 					{
-						__temp_executeDef42 = false;
+						__temp_executeDef43 = false;
 						return "Float";
 					}
 					
@@ -116,7 +116,7 @@ public  class Type extends haxe.lang.HxObject
 				
 			}
 			
-			if (__temp_executeDef42) 
+			if (__temp_executeDef43) 
 			{
 				return name;
 			}

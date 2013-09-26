@@ -1,4 +1,6 @@
 src/haxe/root/Std.java
+src/haxe/Log.java
+src/haxe/Log_new_45__Fun.java
 src/haxe/lang/IEquatable.java
 src/haxe/lang/HaxeException.java
 src/haxe/root/Array.java
@@ -32,5 +34,5 @@ src/haxe/lang/FieldLookup.java
 src/haxe/lang/Iterator.java
 src/haxe/lang/Iterable.java
 src/finda/View_ls.java
-src/finda/View_ls_buildFileStructure_75__Fun.java
+src/finda/View_ls_buildFileStructure_99__Fun.java
 src/haxe/root/StringBuf.java

@@ -18,7 +18,7 @@ public  class FileSystem extends haxe.lang.HxObject
 	}
 	
 	
-	public static   void __hx_ctor_sys_FileSystem(sys.FileSystem __temp_me17)
+	public static   void __hx_ctor_sys_FileSystem(sys.FileSystem __temp_me18)
 	{
 		{
 		}
@@ -35,13 +35,19 @@ public  class FileSystem extends haxe.lang.HxObject
 		}
 		
 		{
-			haxe.root.Date __temp_odecl82 = haxe.root.Date.now();
-			haxe.root.Date __temp_odecl83 = haxe.root.Date.fromTime(((double) (f.lastModified()) ));
-			haxe.root.Date __temp_odecl84 = haxe.root.Date.fromTime(((double) (f.lastModified()) ));
-			int __temp_odecl85 = ((int) (f.length()) );
-			return new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"atime", "ctime", "mtime"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{__temp_odecl82, __temp_odecl84, __temp_odecl83}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"dev", "gid", "ino", "mode", "nlink", "rdev", "size", "uid"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (__temp_odecl85) )) ), ((java.lang.Object) (((double) (0) )) )}));
+			haxe.root.Date __temp_odecl80 = haxe.root.Date.now();
+			haxe.root.Date __temp_odecl81 = haxe.root.Date.fromTime(((double) (f.lastModified()) ));
+			haxe.root.Date __temp_odecl82 = haxe.root.Date.fromTime(((double) (f.lastModified()) ));
+			int __temp_odecl83 = ((int) (f.length()) );
+			return new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"atime", "ctime", "mtime"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{__temp_odecl80, __temp_odecl82, __temp_odecl81}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"dev", "gid", "ino", "mode", "nlink", "rdev", "size", "uid"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (0) )) ), ((java.lang.Object) (((double) (__temp_odecl83) )) ), ((java.lang.Object) (((double) (0) )) )}));
 		}
 		
+	}
+	
+	
+	public static   java.lang.String fullPath(java.lang.String relPath)
+	{
+		return new java.io.File(haxe.lang.Runtime.toString(relPath)).getAbsolutePath();
 	}
 	
 	

@@ -66,14 +66,14 @@ public  class Date extends haxe.lang.HxObject
 	@Override public   java.lang.Object __hx_setField(java.lang.String field, java.lang.Object value, boolean handleProperties)
 	{
 		{
-			boolean __temp_executeDef33 = true;
+			boolean __temp_executeDef34 = true;
 			switch (field.hashCode())
 			{
 				case 3076014:
 				{
 					if (field.equals("date")) 
 					{
-						__temp_executeDef33 = false;
+						__temp_executeDef34 = false;
 						this.date = ((java.util.Date) (value) );
 						return value;
 					}
@@ -84,7 +84,7 @@ public  class Date extends haxe.lang.HxObject
 				
 			}
 			
-			if (__temp_executeDef33) 
+			if (__temp_executeDef34) 
 			{
 				return super.__hx_setField(field, value, handleProperties);
 			}
@@ -101,14 +101,14 @@ public  class Date extends haxe.lang.HxObject
 	@Override public   java.lang.Object __hx_getField(java.lang.String field, boolean throwErrors, boolean isCheck, boolean handleProperties)
 	{
 		{
-			boolean __temp_executeDef34 = true;
+			boolean __temp_executeDef35 = true;
 			switch (field.hashCode())
 			{
 				case 3076014:
 				{
 					if (field.equals("date")) 
 					{
-						__temp_executeDef34 = false;
+						__temp_executeDef35 = false;
 						return this.date;
 					}
 					
@@ -118,7 +118,7 @@ public  class Date extends haxe.lang.HxObject
 				
 			}
 			
-			if (__temp_executeDef34) 
+			if (__temp_executeDef35) 
 			{
 				return super.__hx_getField(field, throwErrors, isCheck, handleProperties);
 			}

@@ -1,4 +1,4 @@
-/Users/justinmills/clients/EXPERIMENTAL/fileReader
+/Users/justinmills/clients/EXPERIMENTAL/finda
 begin defines
 dce
 haxe3
@@ -61,6 +61,9 @@ M java.awt.PageAttributes
 M java.nio.LongBuffer
 M java.lang.Enum
 M java.text.AttributedCharacterIterator
+M haxe.Log
+C haxe.Log
+C haxe.Log_new_45__Fun
 M java.internal.IEquatable
 C haxe.lang.IEquatable
 M java.javax.swing.event.SwingPropertyChangeSupport
@@ -341,6 +344,7 @@ M java.lang.reflect.AnnotatedElement
 M java.javax.swing.plaf.MenuItemUI
 M java.lang.StackTraceElement
 M java.awt.AWTEvent
+M haxe.PosInfos
 M java.awt.Choice
 M java.lang.reflect.TypeVariable
 M java.lang.Boolean
@@ -509,7 +513,7 @@ M java.javax.swing.plaf.RootPaneUI
 M java.types.Int16
 M finda.View_ls
 C finda.View_ls
-C finda.View_ls_buildFileStructure_75__Fun
+C finda.View_ls_buildFileStructure_99__Fun
 M java.lang.StringBuffer
 M java.awt.image.TileObserver
 M java.awt.PaintContext

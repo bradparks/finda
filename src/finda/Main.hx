@@ -32,6 +32,11 @@ implements MouseMotionListener
     var shapes:         Array<FileView>;
     var view_ls:        View_ls;
     var view_ls2:       View_ls;
+    var fileView:       FileView;
+    var view:           View_ls;
+    var dx:             Float;
+    var dy:             Float;
+    var down:           Bool        = false;
     
     public static function main() { new Main(); } public function new()
     {
@@ -101,10 +106,6 @@ implements MouseMotionListener
     
     public function mouseExited( e: MouseEvent ) {}
     public function mouseMoved( e: MouseEvent ) overCheck( e ); 
-    public var fileView: FileView;
-    public var dx: Float;
-    public var dy: Float;
-    public var down: Bool = false;
     public function overCheck( e: MouseEvent )
     {
         var fileView1 = view_ls.overCheck( e ) ;
@@ -121,9 +122,11 @@ implements MouseMotionListener
             if( bool1 )
             {
                 fileView = fileView1;
+                view = view_ls;
             } else if( bool2 )
             {
                 fileView = fileView2;
+                view = view_ls2;
             }
         } 
         else
@@ -136,7 +139,13 @@ implements MouseMotionListener
     }
     
     public function mouseEntered( e: MouseEvent ) {}  
-    public function mouseClicked( e: MouseEvent ) {}  
+    public function mouseClicked( e: MouseEvent ) {
+        if( fileView != null )
+        {
+            view.clicked( fileView );
+            surface.repaint();
+        }
+    }  
     public function mouseReleased( e: MouseEvent ){
         down = false;
     }

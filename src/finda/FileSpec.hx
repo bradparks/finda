@@ -5,5 +5,6 @@ typedef FileSpec =
     name: String,
     isDir: Bool,
     firstLetter: Int,
-    fileStat: sys.FileStat
+    fileStat: sys.FileStat,
+    subDirLen: Int
 }
