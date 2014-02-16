@@ -18,7 +18,6 @@ class PathInfo
         path = path_;
         var charcode    = StringTools.fastCodeAt;
         full = sys.FileSystem.fullPath( path );
-        trace( ' full ' + full );
         var len = full.length;
         while( len > 0 && charcode( full, len-- ) != 47 ){}
         parent = full.substr( 0, len + 1 ) + '/';
