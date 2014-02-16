@@ -3,7 +3,7 @@
 #Java target 
     -cp src
     -java java
-    -main finda.Main
+    -main finda.MainJava
     -D haxe3
     #
     #

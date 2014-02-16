@@ -28,15 +28,7 @@ public  class StringTools extends haxe.lang.HxObject
 	
 	public static   int fastCodeAt(java.lang.String s, int index)
 	{
-		if (( index < s.length() )) 
-		{
-			return ((int) (s.charAt(index)) );
-		}
-		 else 
-		{
-			return -1;
-		}
-		
+		return ( (( index < s.length() )) ? (((int) (s.charAt(index)) )) : (-1) );
 	}
 	
 	

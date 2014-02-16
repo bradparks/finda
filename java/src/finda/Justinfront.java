@@ -18,7 +18,7 @@ public  class Justinfront extends haxe.lang.HxObject
 	}
 	
 	
-	public static   void __hx_ctor_finda_Justinfront(finda.Justinfront __temp_me7)
+	public static   void __hx_ctor_finda_Justinfront(finda.Justinfront __temp_me9)
 	{
 		{
 		}

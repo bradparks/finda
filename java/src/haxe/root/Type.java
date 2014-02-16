@@ -73,16 +73,16 @@ public  class Type extends haxe.lang.HxObject
 		}
 		
 		{
-			java.lang.String __temp_svar41 = (name);
-			int __temp_hash43 = __temp_svar41.hashCode();
-			boolean __temp_executeDef42 = true;
-			switch (__temp_hash43)
+			java.lang.String __temp_svar45 = (name);
+			int __temp_hash47 = __temp_svar45.hashCode();
+			boolean __temp_executeDef46 = true;
+			switch (__temp_hash47)
 			{
 				case -672261858:case 104431:
 				{
-					if (( (( ( __temp_hash43 == -672261858 ) && __temp_svar41.equals("Integer") )) || __temp_svar41.equals("int") )) 
+					if (( (( ( __temp_hash47 == -672261858 ) && __temp_svar45.equals("Integer") )) || __temp_svar45.equals("int") )) 
 					{
-						__temp_executeDef42 = false;
+						__temp_executeDef46 = false;
 						return "Int";
 					}
 					
@@ -92,9 +92,9 @@ public  class Type extends haxe.lang.HxObject
 				
 				case -1939501217:
 				{
-					if (__temp_svar41.equals("Object")) 
+					if (__temp_svar45.equals("Object")) 
 					{
-						__temp_executeDef42 = false;
+						__temp_executeDef46 = false;
 						return "Dynamic";
 					}
 					
@@ -104,9 +104,9 @@ public  class Type extends haxe.lang.HxObject
 				
 				case 2052876273:case -1325958191:
 				{
-					if (( (( ( __temp_hash43 == 2052876273 ) && __temp_svar41.equals("Double") )) || __temp_svar41.equals("double") )) 
+					if (( (( ( __temp_hash47 == 2052876273 ) && __temp_svar45.equals("Double") )) || __temp_svar45.equals("double") )) 
 					{
-						__temp_executeDef42 = false;
+						__temp_executeDef46 = false;
 						return "Float";
 					}
 					
@@ -116,7 +116,7 @@ public  class Type extends haxe.lang.HxObject
 				
 			}
 			
-			if (__temp_executeDef42) 
+			if (__temp_executeDef46) 
 			{
 				return name;
 			}
@@ -404,20 +404,7 @@ public  class Type extends haxe.lang.HxObject
 			return ((haxe.root.Array<java.lang.String>) (haxe.lang.Runtime.callField(haxe.lang.Runtime.getField(e, "constructs", true), "copy", null)) );
 		}
 		
-		java.lang.Enum[] vals = ((java.lang.Enum[]) (haxe.lang.Runtime.callField(e, "values", null)) );
-		haxe.root.Array<java.lang.String> ret = new haxe.root.Array<java.lang.String>(new java.lang.String[]{});
-		{
-			int _g1 = 0;
-			int _g = vals.length;
-			while (( _g1 < _g ))
-			{
-				int i = _g1++;
-				ret.__set(i, vals[i].name());
-			}
-			
-		}
-		
-		return ret;
+		return haxe.root.Type.getClassFields(((java.lang.Class) (e) ));
 	}
 	
 	

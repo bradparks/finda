@@ -1,8 +1,8 @@
-/Users/justinmills/clients/EXPERIMENTAL/finda
+/Users/jam/MyOsWork/finda/finda
 begin defines
 dce
 haxe3
-haxe_svn
+haxe_release
 haxe_ver
 hxjava
 java
@@ -21,8 +21,8 @@ end defines
 begin defines_data
 dce=std
 haxe3=1
-haxe_svn=1
-haxe_ver=3.1
+haxe_release=1
+haxe_ver=3.
 hxjava=1
 java=1
 java0=1
@@ -59,8 +59,10 @@ M java.awt.image.ImageProducer
 M java.javax.swing.event.MenuEvent
 M java.awt.PageAttributes
 M java.nio.LongBuffer
-M java.lang.Enum
 M java.text.AttributedCharacterIterator
+M haxe.Log
+C haxe.Log
+C haxe.Fun_d13ae193
 M java.internal.IEquatable
 C haxe.lang.IEquatable
 M java.javax.swing.event.SwingPropertyChangeSupport
@@ -68,9 +70,10 @@ M java.net.FileNameMap
 M java.awt.image.ImageObserver
 M java.util.concurrent.ExecutorService
 M java.awt.event.AdjustmentListener
+M finda.PathInfo
+C finda.PathInfo
 M java.awt.image.BufferStrategy
 M java.sun.font.FontAccess
-M java.io.IOException
 M java.javax.swing.JMenu
 M java.sun.java2d.Disposer
 M java.util.Set
@@ -91,15 +94,13 @@ M java.awt.image.IndexColorModel
 M java.awt.peer.TextAreaPeer
 M haxe.root.Array
 C haxe.root.Array
-C haxe.root.Array_iterator_380__Fun
-C haxe.root.Array_iterator_381__Fun
+C haxe.root.Fun_c0a2b734
+C haxe.root.Fun_397c624c
 M java.sun.awt.RequestFocusController
 M java.javax.swing.plaf.PanelUI
 M java.io.BufferedReader
 M java.awt.dnd.DragGestureEvent
 M java.util.spi.LocaleNameProvider
-M finda.Main
-C finda.Main
 M java.sun.awt.CausedFocusEvent
 M java.awt.Paint
 M java.awt.Container
@@ -182,14 +183,14 @@ M java.awt.event.ActionListener
 M java.awt.peer.FramePeer
 M java.lang.Class
 M java.security.Timestamp
-M haxe.io.Eof
-C haxe.io.Eof
 M java.awt.Color
 M java.awt.DisplayMode
 M java.awt.peer.TextComponentPeer
 M java.lang.ref.WeakReference
 M java.javax.swing.event.ChangeListener
 M java.security.Principal
+M finda.FileViewCreator
+C finda.FileViewCreator
 M java.lang.Cloneable
 M java.nio.file.attribute.UserPrincipalLookupService
 M java.awt.MenuBar
@@ -267,7 +268,6 @@ M java.javax.swing.plaf.PopupMenuUI
 M haxe.Int64
 C haxe.Int64
 M java.util.concurrent.ConcurrentHashMap
-M java.io.RandomAccessFile
 M java.net.NetworkInterface
 M haxe.root.Map
 M java.awt.image.Raster
@@ -305,7 +305,6 @@ M java.io.Serializable
 M java.awt.event.WindowFocusListener
 M java.awt.dnd.peer.DragSourceContextPeer
 M java.net.SocketAddress
-M java.io.EOFException
 M java.sun.util.locale.BaseLocale
 M java.awt.font.LineMetrics
 M java.awt.CheckboxMenuItem
@@ -341,6 +340,7 @@ M java.lang.reflect.AnnotatedElement
 M java.javax.swing.plaf.MenuItemUI
 M java.lang.StackTraceElement
 M java.awt.AWTEvent
+M haxe.PosInfos
 M java.awt.Choice
 M java.lang.reflect.TypeVariable
 M java.lang.Boolean
@@ -354,8 +354,11 @@ M java.awt.Font
 M java.awt.datatransfer.FlavorTable
 M java.lang.RuntimeException
 M java.awt.Point
+M finda.MainJava
+C finda.MainJava
 M java.awt.event.InputMethodEvent
 M java.awt.event.InputMethodListener
+M finda.Color
 M java.awt.Window
 M java.javax.swing.JToolTip
 M java.nio.file.WatchKey
@@ -364,9 +367,11 @@ M haxe.ds.StringMap
 M java.lang.Throwable
 M java.awt.peer.PopupMenuPeer
 M java.nio.channels.CompletionHandler
+M finda.FileViewStructure
+C finda.FileViewStructure
+C finda.Fun_b3049195
 M finda.Justinfront
 C finda.Justinfront
-M haxe.ds.WeakMap
 M java.awt.dnd.DragGestureRecognizer
 M java.nio.channels.spi.AbstractInterruptibleChannel
 M java.awt.event.ActionEvent
@@ -509,7 +514,7 @@ M java.javax.swing.plaf.RootPaneUI
 M java.types.Int16
 M finda.View_ls
 C finda.View_ls
-C finda.View_ls_buildFileStructure_99__Fun
+C finda.Fun_519a9f19
 M java.lang.StringBuffer
 M java.awt.image.TileObserver
 M java.awt.PaintContext
@@ -562,6 +567,7 @@ M java.nio.file.PathMatcher
 M java.awt.Dimension
 M java.nio.file.WatchService
 M java.util.concurrent.locks.Condition
+M finda.ConversionCode
 M java.awt.ImageCapabilities
 M java.awt.geom.AffineTransform
 M java.lang.Appendable
@@ -625,7 +631,7 @@ C haxe.root.StringBuf
 M java.awt.font.TextAttribute
 end modules
 begin main
-finda.Main
+finda.MainJava
 end main
 begin resources
 end resources

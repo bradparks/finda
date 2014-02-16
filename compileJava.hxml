@@ -3,11 +3,11 @@
 #Java target 
     -cp src
     -java java
-    -main finda.Main
+    -main finda.MainJava
     -D haxe3
     #
     #--next
     -cmd cd java/src 
-    -cmd javac finda/Main.java -d ../
+    -cmd javac finda/MainJava.java -d ../
     -cmd cd ..
-    -cmd java finda/Main
+    -cmd java finda/MainJava

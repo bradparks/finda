@@ -1,18 +1,22 @@
 package finda;
-import java.awt.Color;
-import java.awt.Shape;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.GeneralPath;
+import finda.ConversionCode;
+
+
+import finda.View_ls;
 
 typedef FileView =
 {
     file: FileSpec,
-    shape: Shape,
-    generalPath: GeneralPath,
+    #if java
+        shape: java.awt.Shape,
+        generalPath: java.awt.geom.GeneralPath,
+    #else
+        shape: flash.display.Bitmap,
+    #end
     change: Bool,
-    color: Color,
-    x: Float,
-    y: Float,
+    color: Colour,
+    x: Int,
+    y: Int,
     width: Int,
     height: Int
 }
