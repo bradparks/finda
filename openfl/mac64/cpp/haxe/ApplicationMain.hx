@@ -65,7 +65,7 @@ class ApplicationMain {
 				
 				var hasMain = false;
 				
-				for (methodName in Type.getClassFields (Main)) {
+				for (methodName in Type.getClassFields (finda.MainOpenfl)) {
 					
 					if (methodName == "main") {
 						
@@ -78,7 +78,7 @@ class ApplicationMain {
 					
 				if (hasMain) {
 					
-					Reflect.callMethod (Main, Reflect.field (Main, "main"), []);
+					Reflect.callMethod (finda.MainOpenfl, Reflect.field (finda.MainOpenfl, "main"), []);
 					
 				} else {
 					
@@ -180,7 +180,7 @@ class ApplicationMain {
 
 
 @:build(DocumentClass.build())
-@:keep class DocumentClass extends Main {}
+@:keep class DocumentClass extends finda.MainOpenfl {}
 
 
 #if mobile
@@ -299,7 +299,7 @@ class ApplicationMain {
 			#end
 			
 			var hasMain = false;
-			for (methodName in Type.getClassFields (Main)) {
+			for (methodName in Type.getClassFields (finda.MainOpenfl)) {
 				if (methodName == "main") {
 					hasMain = true;
 					break;
@@ -307,9 +307,9 @@ class ApplicationMain {
 			}
 			
 			if (hasMain) {
-				Reflect.callMethod (Main, Reflect.field (Main, "main"), []);
+				Reflect.callMethod (finda.MainOpenfl, Reflect.field (finda.MainOpenfl, "main"), []);
 			}else {
-				var instance = Type.createInstance (Main, []);
+				var instance = Type.createInstance (finda.MainOpenfl, []);
 			}
 			
 			if (autoShowFrame) {
@@ -338,7 +338,7 @@ class ApplicationMain {
 #else
 
 
-import Main;
+import finda.MainOpenfl;
 
 class ApplicationMain {
 	

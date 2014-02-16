@@ -6,9 +6,6 @@
 #ifndef INCLUDED_DocumentClass
 #include <DocumentClass.h>
 #endif
-#ifndef INCLUDED_Main
-#include <Main.h>
-#endif
 #ifndef INCLUDED_Reflect
 #include <Reflect.h>
 #endif
@@ -17,6 +14,9 @@
 #endif
 #ifndef INCLUDED_Type
 #include <Type.h>
+#endif
+#ifndef INCLUDED_finda_MainOpenfl
+#include <finda/MainOpenfl.h>
 #endif
 #ifndef INCLUDED_flash_Lib
 #include <flash/Lib.h>
@@ -117,7 +117,7 @@ Void ApplicationMain_obj::main( ){
 				{
 					HX_STACK_LINE(68)
 					int _g = (int)0;		HX_STACK_VAR(_g,"_g");
-					Array< ::String > _g1 = ::Type_obj::getClassFields(hx::ClassOf< ::Main >());		HX_STACK_VAR(_g1,"_g1");
+					Array< ::String > _g1 = ::Type_obj::getClassFields(hx::ClassOf< ::finda::MainOpenfl >());		HX_STACK_VAR(_g1,"_g1");
 					HX_STACK_LINE(68)
 					while(((_g < _g1->length))){
 						HX_STACK_LINE(68)
@@ -136,7 +136,7 @@ Void ApplicationMain_obj::main( ){
 				HX_STACK_LINE(79)
 				if ((hasMain)){
 					HX_STACK_LINE(79)
-					::Reflect_obj::callMethod(hx::ClassOf< ::Main >(),::Reflect_obj::field(hx::ClassOf< ::Main >(),HX_CSTRING("main")),Dynamic( Array_obj<Dynamic>::__new()));
+					::Reflect_obj::callMethod(hx::ClassOf< ::finda::MainOpenfl >(),::Reflect_obj::field(hx::ClassOf< ::finda::MainOpenfl >(),HX_CSTRING("main")),Dynamic( Array_obj<Dynamic>::__new()));
 				}
 				else{
 					HX_STACK_LINE(85)

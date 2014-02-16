@@ -3,8 +3,8 @@
 #ifndef INCLUDED_DocumentClass
 #include <DocumentClass.h>
 #endif
-#ifndef INCLUDED_Main
-#include <Main.h>
+#ifndef INCLUDED_finda_MainOpenfl
+#include <finda/MainOpenfl.h>
 #endif
 #ifndef INCLUDED_flash_Lib
 #include <flash/Lib.h>

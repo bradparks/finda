@@ -29,6 +29,9 @@ class HXCPP_CLASS_ATTRIBUTES  Date_obj : public hx::Object{
 		::String __ToString() const { return HX_CSTRING("Date"); }
 
 		Float mSeconds;
+		static ::Date fromTime( Float t);
+		static Dynamic fromTime_dyn();
+
 		static ::Date fromString( ::String s);
 		static Dynamic fromString_dyn();
 

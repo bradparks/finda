@@ -31,6 +31,20 @@ Dynamic Date_obj::__Create(hx::DynamicArray inArgs)
 	result->__construct(inArgs[0],inArgs[1],inArgs[2],inArgs[3],inArgs[4],inArgs[5]);
 	return result;}
 
+::Date Date_obj::fromTime( Float t){
+	HX_STACK_PUSH("Date::fromTime","/usr/lib/haxe/std/cpp/_std/Date.hx",54);
+	HX_STACK_ARG(t,"t");
+	HX_STACK_LINE(55)
+	::Date result = ::Date_obj::__new((int)0,(int)0,(int)0,(int)0,(int)0,(int)0);		HX_STACK_VAR(result,"result");
+	HX_STACK_LINE(56)
+	result->mSeconds = (t * 0.001);
+	HX_STACK_LINE(57)
+	return result;
+}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC1(Date_obj,fromTime,return )
+
 ::Date Date_obj::fromString( ::String s){
 	HX_STACK_PUSH("Date::fromString","/usr/lib/haxe/std/cpp/_std/Date.hx",60);
 	HX_STACK_ARG(s,"s");
@@ -96,6 +110,7 @@ Dynamic Date_obj::__Field(const ::String &inName,bool inCallProp)
 {
 	switch(inName.length) {
 	case 8:
+		if (HX_FIELD_EQ(inName,"fromTime") ) { return fromTime_dyn(); }
 		if (HX_FIELD_EQ(inName,"mSeconds") ) { return mSeconds; }
 		break;
 	case 10:
@@ -120,6 +135,7 @@ void Date_obj::__GetFields(Array< ::String> &outFields)
 };
 
 static ::String sStaticFields[] = {
+	HX_CSTRING("fromTime"),
 	HX_CSTRING("fromString"),
 	String(null()) };
 

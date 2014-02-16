@@ -1,6 +1,8 @@
 #include <hxcpp.h>
 
 #include <sys/io/FileOutput.h>
+#include <sys/FileSystem.h>
+#include <sys/_FileSystem/FileKind.h>
 #include <openfl/utils/WeakRef.h>
 #include <openfl/utils/Float32Array.h>
 #include <openfl/utils/ArrayBufferView.h>
@@ -41,9 +43,15 @@
 #include <openfl/utils/IMemoryRange.h>
 #include <flash/utils/IDataOutput.h>
 #include <flash/ui/Keyboard.h>
+#include <flash/text/TextLineMetrics.h>
+#include <flash/text/TextFormat.h>
+#include <flash/text/TextFieldType.h>
+#include <flash/text/TextFieldAutoSize.h>
+#include <flash/text/TextField.h>
+#include <flash/text/GridFitType.h>
 #include <flash/text/FontType.h>
 #include <flash/text/FontStyle.h>
-#include <flash/text/Font.h>
+#include <flash/text/AntiAliasType.h>
 #include <flash/system/SecurityDomain.h>
 #include <flash/system/LoaderContext.h>
 #include <flash/system/ApplicationDomain.h>
@@ -114,6 +122,15 @@
 #include <flash/display/Bitmap.h>
 #include <flash/_Vector/Vector_Impl_.h>
 #include <flash/Memory.h>
+#include <finda/View_ls.h>
+#include <finda/PathInfo.h>
+#include <finda/Justinfront.h>
+#include <finda/FileViewStructure.h>
+#include <finda/FileViewCreatorFL.h>
+#include <finda/Color.h>
+#include <finda/BitmapTextCreator.h>
+#include <finda/Georgia.h>
+#include <flash/text/Font.h>
 #include <cpp/zip/Uncompress.h>
 #include <cpp/zip/Flush.h>
 #include <cpp/zip/Compress.h>
@@ -131,7 +148,7 @@
 #include <openfl/AssetLibrary.h>
 #include <Date.h>
 #include <DocumentClass.h>
-#include <Main.h>
+#include <finda/MainOpenfl.h>
 #include <flash/display/Sprite.h>
 #include <flash/display/DisplayObjectContainer.h>
 #include <flash/display/InteractiveObject.h>
@@ -155,6 +172,8 @@ void __boot_all()
 {
 hx::RegisterResources( hx::GetResources() );
 ::sys::io::FileOutput_obj::__register();
+::sys::FileSystem_obj::__register();
+::sys::_FileSystem::FileKind_obj::__register();
 ::openfl::utils::WeakRef_obj::__register();
 ::openfl::utils::Float32Array_obj::__register();
 ::openfl::utils::ArrayBufferView_obj::__register();
@@ -195,9 +214,15 @@ hx::RegisterResources( hx::GetResources() );
 ::openfl::utils::IMemoryRange_obj::__register();
 ::flash::utils::IDataOutput_obj::__register();
 ::flash::ui::Keyboard_obj::__register();
+::flash::text::TextLineMetrics_obj::__register();
+::flash::text::TextFormat_obj::__register();
+::flash::text::TextFieldType_obj::__register();
+::flash::text::TextFieldAutoSize_obj::__register();
+::flash::text::TextField_obj::__register();
+::flash::text::GridFitType_obj::__register();
 ::flash::text::FontType_obj::__register();
 ::flash::text::FontStyle_obj::__register();
-::flash::text::Font_obj::__register();
+::flash::text::AntiAliasType_obj::__register();
 ::flash::system::SecurityDomain_obj::__register();
 ::flash::system::LoaderContext_obj::__register();
 ::flash::system::ApplicationDomain_obj::__register();
@@ -268,6 +293,15 @@ hx::RegisterResources( hx::GetResources() );
 ::flash::display::Bitmap_obj::__register();
 ::flash::_Vector::Vector_Impl__obj::__register();
 ::flash::Memory_obj::__register();
+::finda::View_ls_obj::__register();
+::finda::PathInfo_obj::__register();
+::finda::Justinfront_obj::__register();
+::finda::FileViewStructure_obj::__register();
+::finda::FileViewCreatorFL_obj::__register();
+::finda::Color_obj::__register();
+::finda::BitmapTextCreator_obj::__register();
+::finda::Georgia_obj::__register();
+::flash::text::Font_obj::__register();
 ::cpp::zip::Uncompress_obj::__register();
 ::cpp::zip::Flush_obj::__register();
 ::cpp::zip::Compress_obj::__register();
@@ -285,7 +319,7 @@ hx::RegisterResources( hx::GetResources() );
 ::openfl::AssetLibrary_obj::__register();
 ::Date_obj::__register();
 ::DocumentClass_obj::__register();
-::Main_obj::__register();
+::finda::MainOpenfl_obj::__register();
 ::flash::display::Sprite_obj::__register();
 ::flash::display::DisplayObjectContainer_obj::__register();
 ::flash::display::InteractiveObject_obj::__register();
@@ -330,7 +364,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flash::display::InteractiveObject_obj::__boot();
 ::flash::display::DisplayObjectContainer_obj::__boot();
 ::flash::display::Sprite_obj::__boot();
-::Main_obj::__boot();
+::finda::MainOpenfl_obj::__boot();
 ::DocumentClass_obj::__boot();
 ::Date_obj::__boot();
 ::openfl::AssetLibrary_obj::__boot();
@@ -342,6 +376,15 @@ hx::RegisterResources( hx::GetResources() );
 ::StringBuf_obj::__boot();
 ::StringTools_obj::__boot();
 ::Type_obj::__boot();
+::flash::text::Font_obj::__boot();
+::finda::Georgia_obj::__boot();
+::finda::BitmapTextCreator_obj::__boot();
+::finda::Color_obj::__boot();
+::finda::FileViewCreatorFL_obj::__boot();
+::finda::FileViewStructure_obj::__boot();
+::finda::Justinfront_obj::__boot();
+::finda::PathInfo_obj::__boot();
+::finda::View_ls_obj::__boot();
 ::flash::Memory_obj::__boot();
 ::flash::_Vector::Vector_Impl__obj::__boot();
 ::flash::display::Bitmap_obj::__boot();
@@ -412,9 +455,15 @@ hx::RegisterResources( hx::GetResources() );
 ::flash::system::ApplicationDomain_obj::__boot();
 ::flash::system::LoaderContext_obj::__boot();
 ::flash::system::SecurityDomain_obj::__boot();
-::flash::text::Font_obj::__boot();
+::flash::text::AntiAliasType_obj::__boot();
 ::flash::text::FontStyle_obj::__boot();
 ::flash::text::FontType_obj::__boot();
+::flash::text::GridFitType_obj::__boot();
+::flash::text::TextField_obj::__boot();
+::flash::text::TextFieldAutoSize_obj::__boot();
+::flash::text::TextFieldType_obj::__boot();
+::flash::text::TextFormat_obj::__boot();
+::flash::text::TextLineMetrics_obj::__boot();
 ::flash::ui::Keyboard_obj::__boot();
 ::flash::utils::IDataOutput_obj::__boot();
 ::openfl::utils::IMemoryRange_obj::__boot();
@@ -454,6 +503,8 @@ hx::RegisterResources( hx::GetResources() );
 ::openfl::utils::ArrayBufferView_obj::__boot();
 ::openfl::utils::Float32Array_obj::__boot();
 ::openfl::utils::WeakRef_obj::__boot();
+::sys::_FileSystem::FileKind_obj::__boot();
+::sys::FileSystem_obj::__boot();
 ::sys::io::FileOutput_obj::__boot();
 }
 

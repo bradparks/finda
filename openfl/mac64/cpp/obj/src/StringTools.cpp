@@ -42,6 +42,29 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(StringTools_obj,urlEncode,return )
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(StringTools_obj,urlDecode,return )
 
+::String StringTools_obj::replace( ::String s,::String sub,::String by){
+	HX_STACK_PUSH("StringTools::replace","/usr/lib/haxe/std/StringTools.hx",288);
+	HX_STACK_ARG(s,"s");
+	HX_STACK_ARG(sub,"sub");
+	HX_STACK_ARG(by,"by");
+	HX_STACK_LINE(288)
+	return s.split(sub)->join(by);
+}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC3(StringTools_obj,replace,return )
+
+int StringTools_obj::fastCodeAt( ::String s,int index){
+	HX_STACK_PUSH("StringTools::fastCodeAt","/usr/lib/haxe/std/StringTools.hx",339);
+	HX_STACK_ARG(s,"s");
+	HX_STACK_ARG(index,"index");
+	HX_STACK_LINE(339)
+	return s.cca(index);
+}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC2(StringTools_obj,fastCodeAt,return )
+
 
 StringTools_obj::StringTools_obj()
 {
@@ -60,9 +83,15 @@ void StringTools_obj::__Visit(HX_VISIT_PARAMS)
 Dynamic StringTools_obj::__Field(const ::String &inName,bool inCallProp)
 {
 	switch(inName.length) {
+	case 7:
+		if (HX_FIELD_EQ(inName,"replace") ) { return replace_dyn(); }
+		break;
 	case 9:
 		if (HX_FIELD_EQ(inName,"urlEncode") ) { return urlEncode_dyn(); }
 		if (HX_FIELD_EQ(inName,"urlDecode") ) { return urlDecode_dyn(); }
+		break;
+	case 10:
+		if (HX_FIELD_EQ(inName,"fastCodeAt") ) { return fastCodeAt_dyn(); }
 	}
 	return super::__Field(inName,inCallProp);
 }
@@ -80,6 +109,8 @@ void StringTools_obj::__GetFields(Array< ::String> &outFields)
 static ::String sStaticFields[] = {
 	HX_CSTRING("urlEncode"),
 	HX_CSTRING("urlDecode"),
+	HX_CSTRING("replace"),
+	HX_CSTRING("fastCodeAt"),
 	String(null()) };
 
 static ::String sMemberFields[] = {
