@@ -146,7 +146,7 @@ obj/darwin64//src/DefaultAssetLibrary.o
 obj/darwin64//src/openfl/AssetLibrary.o
 obj/darwin64//src/Date.o
 obj/darwin64//src/DocumentClass.o
-obj/darwin64//src/finda/MainOpenfl.o
+obj/darwin64//src/finda/Main.o
 obj/darwin64//src/flash/display/Sprite.o
 obj/darwin64//src/flash/display/DisplayObjectContainer.o
 obj/darwin64//src/flash/display/InteractiveObject.o

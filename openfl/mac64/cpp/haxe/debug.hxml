@@ -11,6 +11,6 @@
 -cpp openfl/mac64/cpp/obj/
 -cp openfl/mac64/cpp/haxe
 --macro allowPackage("flash")
---macro keep("finda.MainOpenfl")
+--macro keep("finda.Main")
 -debug
 -D no-compilation

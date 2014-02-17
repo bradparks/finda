@@ -148,7 +148,7 @@
 #include <openfl/AssetLibrary.h>
 #include <Date.h>
 #include <DocumentClass.h>
-#include <finda/MainOpenfl.h>
+#include <finda/Main.h>
 #include <flash/display/Sprite.h>
 #include <flash/display/DisplayObjectContainer.h>
 #include <flash/display/InteractiveObject.h>
@@ -319,7 +319,7 @@ hx::RegisterResources( hx::GetResources() );
 ::openfl::AssetLibrary_obj::__register();
 ::Date_obj::__register();
 ::DocumentClass_obj::__register();
-::finda::MainOpenfl_obj::__register();
+::finda::Main_obj::__register();
 ::flash::display::Sprite_obj::__register();
 ::flash::display::DisplayObjectContainer_obj::__register();
 ::flash::display::InteractiveObject_obj::__register();
@@ -364,7 +364,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flash::display::InteractiveObject_obj::__boot();
 ::flash::display::DisplayObjectContainer_obj::__boot();
 ::flash::display::Sprite_obj::__boot();
-::finda::MainOpenfl_obj::__boot();
+::finda::Main_obj::__boot();
 ::DocumentClass_obj::__boot();
 ::Date_obj::__boot();
 ::openfl::AssetLibrary_obj::__boot();

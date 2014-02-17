@@ -42,14 +42,14 @@ Dynamic PathInfo_obj::__Create(hx::DynamicArray inArgs)
 
 Void PathInfo_obj::tracePaths( ){
 {
-		HX_STACK_PUSH("PathInfo::tracePaths","finda/PathInfo.hx",28);
+		HX_STACK_PUSH("PathInfo::tracePaths","finda/PathInfo.hx",27);
 		HX_STACK_THIS(this);
+		HX_STACK_LINE(28)
+		::haxe::Log_obj::trace((HX_CSTRING("path ") + this->path),hx::SourceInfo(HX_CSTRING("PathInfo.hx"),28,HX_CSTRING("finda.PathInfo"),HX_CSTRING("tracePaths")));
 		HX_STACK_LINE(29)
-		::haxe::Log_obj::trace((HX_CSTRING("path ") + this->path),hx::SourceInfo(HX_CSTRING("PathInfo.hx"),29,HX_CSTRING("finda.PathInfo"),HX_CSTRING("tracePaths")));
+		::haxe::Log_obj::trace((HX_CSTRING("full ") + this->full),hx::SourceInfo(HX_CSTRING("PathInfo.hx"),29,HX_CSTRING("finda.PathInfo"),HX_CSTRING("tracePaths")));
 		HX_STACK_LINE(30)
-		::haxe::Log_obj::trace((HX_CSTRING("full ") + this->full),hx::SourceInfo(HX_CSTRING("PathInfo.hx"),30,HX_CSTRING("finda.PathInfo"),HX_CSTRING("tracePaths")));
-		HX_STACK_LINE(31)
-		::haxe::Log_obj::trace((HX_CSTRING("parent ") + this->parent),hx::SourceInfo(HX_CSTRING("PathInfo.hx"),31,HX_CSTRING("finda.PathInfo"),HX_CSTRING("tracePaths")));
+		::haxe::Log_obj::trace((HX_CSTRING("parent ") + this->parent),hx::SourceInfo(HX_CSTRING("PathInfo.hx"),30,HX_CSTRING("finda.PathInfo"),HX_CSTRING("tracePaths")));
 	}
 return null();
 }
@@ -74,13 +74,11 @@ Void PathInfo_obj::changePath( ::String path_){
 		HX_STACK_LINE(20)
 		this->full = ::sys::FileSystem_obj::fullPath(this->path);
 		HX_STACK_LINE(21)
-		::haxe::Log_obj::trace((HX_CSTRING(" full ") + this->full),hx::SourceInfo(HX_CSTRING("PathInfo.hx"),21,HX_CSTRING("finda.PathInfo"),HX_CSTRING("changePath")));
-		HX_STACK_LINE(22)
 		int len = this->full.length;		HX_STACK_VAR(len,"len");
-		HX_STACK_LINE(23)
+		HX_STACK_LINE(22)
 		while(((bool((len > (int)0)) && bool((charcode(this->full,(len)--).Cast< int >() != (int)47))))){
 		}
-		HX_STACK_LINE(24)
+		HX_STACK_LINE(23)
 		this->parent = (this->full.substr((int)0,(len + (int)1)) + HX_CSTRING("/"));
 	}
 return null();

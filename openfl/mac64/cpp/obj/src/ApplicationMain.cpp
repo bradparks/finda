@@ -15,8 +15,8 @@
 #ifndef INCLUDED_Type
 #include <Type.h>
 #endif
-#ifndef INCLUDED_finda_MainOpenfl
-#include <finda/MainOpenfl.h>
+#ifndef INCLUDED_finda_Main
+#include <finda/Main.h>
 #endif
 #ifndef INCLUDED_flash_Lib
 #include <flash/Lib.h>
@@ -99,7 +99,7 @@ Void ApplicationMain_obj::main( ){
 {
 		HX_STACK_PUSH("ApplicationMain::main","ApplicationMain.hx",17);
 		HX_STACK_LINE(19)
-		::flash::Lib_obj::setPackage(HX_CSTRING("Company Name"),HX_CSTRING("Finda"),HX_CSTRING("com.example.finda"),HX_CSTRING("1.0.0"));
+		::flash::Lib_obj::setPackage(HX_CSTRING("justinfront"),HX_CSTRING("Finda"),HX_CSTRING("com.example.finda"),HX_CSTRING("1.0.0"));
 
 		HX_BEGIN_LOCAL_FUNC_S0(hx::LocalFunc,_Function_1_1)
 		Void run(){
@@ -117,7 +117,7 @@ Void ApplicationMain_obj::main( ){
 				{
 					HX_STACK_LINE(68)
 					int _g = (int)0;		HX_STACK_VAR(_g,"_g");
-					Array< ::String > _g1 = ::Type_obj::getClassFields(hx::ClassOf< ::finda::MainOpenfl >());		HX_STACK_VAR(_g1,"_g1");
+					Array< ::String > _g1 = ::Type_obj::getClassFields(hx::ClassOf< ::finda::Main >());		HX_STACK_VAR(_g1,"_g1");
 					HX_STACK_LINE(68)
 					while(((_g < _g1->length))){
 						HX_STACK_LINE(68)
@@ -136,7 +136,7 @@ Void ApplicationMain_obj::main( ){
 				HX_STACK_LINE(79)
 				if ((hasMain)){
 					HX_STACK_LINE(79)
-					::Reflect_obj::callMethod(hx::ClassOf< ::finda::MainOpenfl >(),::Reflect_obj::field(hx::ClassOf< ::finda::MainOpenfl >(),HX_CSTRING("main")),Dynamic( Array_obj<Dynamic>::__new()));
+					::Reflect_obj::callMethod(hx::ClassOf< ::finda::Main >(),::Reflect_obj::field(hx::ClassOf< ::finda::Main >(),HX_CSTRING("main")),Dynamic( Array_obj<Dynamic>::__new()));
 				}
 				else{
 					HX_STACK_LINE(85)

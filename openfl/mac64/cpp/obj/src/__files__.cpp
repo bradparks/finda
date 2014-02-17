@@ -38,7 +38,7 @@ const char *__hxcpp_all_files[] = {
 	"finda/FileViewCreatorFL.hx",
 	"finda/FileViewStructure.hx",
 	"finda/Justinfront.hx",
-	"finda/MainOpenfl.hx",
+	"finda/Main.hx",
 	"finda/PathInfo.hx",
 	"finda/View_ls.hx",
 	"flash/Lib.hx",

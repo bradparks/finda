@@ -101,6 +101,8 @@ M java.javax.swing.plaf.PanelUI
 M java.io.BufferedReader
 M java.awt.dnd.DragGestureEvent
 M java.util.spi.LocaleNameProvider
+M finda.Main
+C finda.Main
 M java.sun.awt.CausedFocusEvent
 M java.awt.Paint
 M java.awt.Container
@@ -354,8 +356,6 @@ M java.awt.Font
 M java.awt.datatransfer.FlavorTable
 M java.lang.RuntimeException
 M java.awt.Point
-M finda.MainJava
-C finda.MainJava
 M java.awt.event.InputMethodEvent
 M java.awt.event.InputMethodListener
 M finda.Color
@@ -631,7 +631,7 @@ C haxe.root.StringBuf
 M java.awt.font.TextAttribute
 end modules
 begin main
-finda.MainJava
+finda.Main
 end main
 begin resources
 end resources

@@ -1,12 +1,12 @@
-#ifndef INCLUDED_finda_MainOpenfl
-#define INCLUDED_finda_MainOpenfl
+#ifndef INCLUDED_finda_Main
+#define INCLUDED_finda_Main
 
 #ifndef HXCPP_H
 #include <hxcpp.h>
 #endif
 
 #include <flash/display/Sprite.h>
-HX_DECLARE_CLASS1(finda,MainOpenfl)
+HX_DECLARE_CLASS1(finda,Main)
 HX_DECLARE_CLASS1(finda,PathInfo)
 HX_DECLARE_CLASS1(finda,View_ls)
 HX_DECLARE_CLASS2(flash,display,DisplayObject)
@@ -21,25 +21,25 @@ HX_DECLARE_CLASS2(flash,events,MouseEvent)
 namespace finda{
 
 
-class HXCPP_CLASS_ATTRIBUTES  MainOpenfl_obj : public ::flash::display::Sprite_obj{
+class HXCPP_CLASS_ATTRIBUTES  Main_obj : public ::flash::display::Sprite_obj{
 	public:
 		typedef ::flash::display::Sprite_obj super;
-		typedef MainOpenfl_obj OBJ_;
-		MainOpenfl_obj();
+		typedef Main_obj OBJ_;
+		Main_obj();
 		Void __construct();
 
 	public:
-		static hx::ObjectPtr< MainOpenfl_obj > __new();
+		static hx::ObjectPtr< Main_obj > __new();
 		static Dynamic __CreateEmpty();
 		static Dynamic __Create(hx::DynamicArray inArgs);
-		~MainOpenfl_obj();
+		~Main_obj();
 
 		HX_DO_RTTI;
 		static void __boot();
 		static void __register();
 		void __Mark(HX_MARK_PARAMS);
 		void __Visit(HX_VISIT_PARAMS);
-		::String __ToString() const { return HX_CSTRING("MainOpenfl"); }
+		::String __ToString() const { return HX_CSTRING("Main"); }
 
 		virtual Void mouseReleased( ::flash::events::MouseEvent e);
 		Dynamic mouseReleased_dyn();
@@ -65,6 +65,9 @@ class HXCPP_CLASS_ATTRIBUTES  MainOpenfl_obj : public ::flash::display::Sprite_o
 		virtual Void setupListeners( );
 		Dynamic setupListeners_dyn();
 
+		virtual Void createViews( );
+		Dynamic createViews_dyn();
+
 		int boundary;
 		bool down;
 		int dy;
@@ -81,4 +84,4 @@ class HXCPP_CLASS_ATTRIBUTES  MainOpenfl_obj : public ::flash::display::Sprite_o
 
 } // end namespace finda
 
-#endif /* INCLUDED_finda_MainOpenfl */ 
+#endif /* INCLUDED_finda_Main */ 

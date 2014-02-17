@@ -1044,7 +1044,7 @@
   </file>
   <file name="src/DocumentClass.cpp">
    <depend name="include/DocumentClass.h"/>
-   <depend name="include/finda/MainOpenfl.h"/>
+   <depend name="include/finda/Main.h"/>
    <depend name="include/flash/Lib.h"/>
    <depend name="include/flash/display/DisplayObject.h"/>
    <depend name="include/flash/display/DisplayObjectContainer.h"/>
@@ -1056,9 +1056,9 @@
    <depend name="include/flash/events/EventDispatcher.h"/>
    <depend name="include/flash/events/IEventDispatcher.h"/>
   </file>
-  <file name="src/finda/MainOpenfl.cpp">
+  <file name="src/finda/Main.cpp">
    <depend name="include/Std.h"/>
-   <depend name="include/finda/MainOpenfl.h"/>
+   <depend name="include/finda/Main.h"/>
    <depend name="include/finda/PathInfo.h"/>
    <depend name="include/finda/View_ls.h"/>
    <depend name="include/flash/display/DisplayObject.h"/>
@@ -1247,7 +1247,7 @@
    <depend name="include/Reflect.h"/>
    <depend name="include/Std.h"/>
    <depend name="include/Type.h"/>
-   <depend name="include/finda/MainOpenfl.h"/>
+   <depend name="include/finda/Main.h"/>
    <depend name="include/flash/Lib.h"/>
    <depend name="include/flash/display/BitmapData.h"/>
    <depend name="include/flash/display/DisplayObject.h"/>

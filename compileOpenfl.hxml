@@ -1,7 +1,8 @@
 
 #-cmd lime test windows
 #-cmd lime test windows -neko
-#-cmd lime test mac 
+-cmd lime test mac 
+--next
 -cmd lime test mac -neko
 #-cmd lime test linux
 #-cmd lime test linux -neko

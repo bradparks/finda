@@ -10,5 +10,5 @@
 -cp openfl/mac64/neko/haxe
 -neko openfl/mac64/neko/obj/ApplicationMain.n
 --macro allowPackage("flash")
---macro keep("finda.MainOpenfl")
+--macro keep("finda.Main")
 -debug

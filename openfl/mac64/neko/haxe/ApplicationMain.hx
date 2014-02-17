@@ -16,7 +16,7 @@ class ApplicationMain {
 	
 	public static function main () {
 		
-		flash.Lib.setPackage ("Company Name", "Finda", "com.example.finda", "1.0.0");
+		flash.Lib.setPackage ("justinfront", "Finda", "com.example.finda", "1.0.0");
 		
 		
 		#if ios
@@ -65,7 +65,7 @@ class ApplicationMain {
 				
 				var hasMain = false;
 				
-				for (methodName in Type.getClassFields (finda.MainOpenfl)) {
+				for (methodName in Type.getClassFields (finda.Main)) {
 					
 					if (methodName == "main") {
 						
@@ -78,7 +78,7 @@ class ApplicationMain {
 					
 				if (hasMain) {
 					
-					Reflect.callMethod (finda.MainOpenfl, Reflect.field (finda.MainOpenfl, "main"), []);
+					Reflect.callMethod (finda.Main, Reflect.field (finda.Main, "main"), []);
 					
 				} else {
 					
@@ -180,7 +180,7 @@ class ApplicationMain {
 
 
 @:build(DocumentClass.build())
-@:keep class DocumentClass extends finda.MainOpenfl {}
+@:keep class DocumentClass extends finda.Main {}
 
 
 #if mobile
@@ -284,7 +284,7 @@ class ApplicationMain {
 	public static function main () {
 		
 		#if openfl
-		flash.Lib.setPackage ("Company Name", "Finda", "com.example.finda", "1.0.0");
+		flash.Lib.setPackage ("justinfront", "Finda", "com.example.finda", "1.0.0");
 		
 		#end
 		
@@ -299,7 +299,7 @@ class ApplicationMain {
 			#end
 			
 			var hasMain = false;
-			for (methodName in Type.getClassFields (finda.MainOpenfl)) {
+			for (methodName in Type.getClassFields (finda.Main)) {
 				if (methodName == "main") {
 					hasMain = true;
 					break;
@@ -307,9 +307,9 @@ class ApplicationMain {
 			}
 			
 			if (hasMain) {
-				Reflect.callMethod (finda.MainOpenfl, Reflect.field (finda.MainOpenfl, "main"), []);
+				Reflect.callMethod (finda.Main, Reflect.field (finda.Main, "main"), []);
 			}else {
-				var instance = Type.createInstance (finda.MainOpenfl, []);
+				var instance = Type.createInstance (finda.Main, []);
 			}
 			
 			if (autoShowFrame) {
@@ -338,7 +338,7 @@ class ApplicationMain {
 #else
 
 
-import finda.MainOpenfl;
+import finda.Main;
 
 class ApplicationMain {
 	

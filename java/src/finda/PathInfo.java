@@ -53,7 +53,6 @@ public  class PathInfo extends haxe.lang.HxObject
 		this.path = path_;
 		haxe.lang.Function charcode = ((haxe.lang.Function) (new haxe.lang.Closure(((java.lang.Object) (haxe.root.StringTools.class) ), haxe.lang.Runtime.toString("fastCodeAt"))) );
 		this.full = sys.FileSystem.fullPath(this.path);
-		haxe.Log.trace.__hx_invoke2_o(0.0, 0.0, ( " full " + this.full ), new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"finda.PathInfo", "PathInfo.hx", "changePath"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (21) )) )})));
 		int len = this.full.length();
 		while (( ( len > 0 ) && ( ((int) (charcode.__hx_invoke2_f(0.0, ((double) (len--) ), this.full, haxe.lang.Runtime.undefined)) ) != 47 ) ))
 		{
@@ -68,9 +67,9 @@ public  class PathInfo extends haxe.lang.HxObject
 	
 	public   void tracePaths()
 	{
-		haxe.Log.trace.__hx_invoke2_o(0.0, 0.0, ( "path " + this.path ), new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"finda.PathInfo", "PathInfo.hx", "tracePaths"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (29) )) )})));
-		haxe.Log.trace.__hx_invoke2_o(0.0, 0.0, ( "full " + this.full ), new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"finda.PathInfo", "PathInfo.hx", "tracePaths"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (30) )) )})));
-		haxe.Log.trace.__hx_invoke2_o(0.0, 0.0, ( "parent " + this.parent ), new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"finda.PathInfo", "PathInfo.hx", "tracePaths"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (31) )) )})));
+		haxe.Log.trace.__hx_invoke2_o(0.0, 0.0, ( "path " + this.path ), new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"finda.PathInfo", "PathInfo.hx", "tracePaths"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (28) )) )})));
+		haxe.Log.trace.__hx_invoke2_o(0.0, 0.0, ( "full " + this.full ), new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"finda.PathInfo", "PathInfo.hx", "tracePaths"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (29) )) )})));
+		haxe.Log.trace.__hx_invoke2_o(0.0, 0.0, ( "parent " + this.parent ), new haxe.lang.DynamicObject(new haxe.root.Array<java.lang.String>(new java.lang.String[]{"className", "fileName", "methodName"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{"finda.PathInfo", "PathInfo.hx", "tracePaths"}), new haxe.root.Array<java.lang.String>(new java.lang.String[]{"lineNumber"}), new haxe.root.Array<java.lang.Object>(new java.lang.Object[]{((java.lang.Object) (((double) (30) )) )})));
 	}
 	
 	

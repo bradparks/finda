@@ -7,6 +7,7 @@ src/haxe/lang/HaxeException.java
 src/haxe/root/Array.java
 src/haxe/root/Fun_c0a2b734.java
 src/haxe/root/Fun_397c624c.java
+src/finda/Main.java
 src/finda/FileViewCreator.java
 src/haxe/root/ValueType.java
 src/haxe/root/Type.java
@@ -20,7 +21,6 @@ src/haxe/Int64.java
 src/haxe/root/Reflect.java
 src/finda/Surface.java
 src/haxe/java/Lib.java
-src/finda/MainJava.java
 src/finda/FileViewStructure.java
 src/finda/Fun_b3049195.java
 src/finda/Justinfront.java
